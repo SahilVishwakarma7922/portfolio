@@ -4,82 +4,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+    <!-- Navbar Section (No changes here) -->
     <nav class="navbar">
-        <div class="logo">Sahil Vishwakarma</div>
-        <div class="menu-toggle" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="logo">Your Name</div>
+        <div class="hamburger" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#download">Download CV</a></li>
-            <li><a href="#whyme">Why Me?</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#why-me">Why Me</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Name and Position Section -->
-    <section class="intro">
-        <div class="name">Sahil Vishwakarma</div>
-        <div class="position">Backend Developer</div>
-        <a href="#about" class="know-more-btn">Know Me More</a>
+    <!-- Hero Section (No changes here) -->
+    <section class="hero-section">
+        <h1 class="hero-heading">My Name Is Sahil Vishwakarma</h1>
+        <p class="sub-heading">I am a Backend Developer</p>
+        <a href="#know-more" class="cta-button">Know More About Me</a>
     </section>
-    <section id="about" class="about-section">
-        <div class="about-content">
-            <h1>Hi, I'm Sahil Vishwakarma</h1>
-            <div class="underline"></div>
-            <p>Every problem has a solution, or I’ll code one myself.</p>
-            <div class="about-points">
-                <ul>
-                    <li><strong>Spring Boot & Java:</strong> I specialize in developing robust backend applications using Spring Boot and Java, delivering scalable and maintainable solutions.</li>
-                    <li><strong>Microservices Architecture:</strong> Experience in designing and implementing Microservices with Docker and Kubernetes for highly scalable and fault-tolerant applications.</li>
-                    <li><strong>Cloud Technologies:</strong> Currently deep-diving into AWS services, enabling cloud-first solutions that are cost-effective and highly available.</li>
-                    <li><strong>Web Development:</strong> Learning and implementing frontend technologies like React to build interactive and responsive user interfaces.</li>
-                    <li><strong>Continuous Learning:</strong> Always exploring new technologies like MongoDB, DevOps tools, and more to enhance my skill set and stay on top of trends.</li>
-                    <li><strong>Problem-Solving Mindset:</strong> I love tackling complex challenges and optimizing processes to make them more efficient and effective.</li>
-                </ul>
+
+<!-- Know More Section -->
+<section id="know-more" class="know-more-section">
+    <!-- Thin Line at the Top -->
+    <div class="section-line"></div>
+
+    <!-- About Me Button -->
+    <a href="#about" class="about-me-btn">About Me</a>
+
+    <!-- Professional Line to Start About Me Section -->
+    <p class="intro-line">
+        "Hello, I'm a passionate backend developer with a focus on building scalable, secure, and efficient systems."
+    </p>
+
+    <!-- Quote Section -->
+    <blockquote class="quote">
+        "The best way to predict the future is to create it."
+    </blockquote>
+
+    <!-- About Me Points -->
+    <div class="about-me">
+        <h2 class="about-me-heading">A Little About Me</h2>
+        <ul class="about-points">
+            <li class="about-point">Passionate about backend development and creating scalable solutions.</li>
+            <li class="about-point">Skilled in multiple programming languages including Python, Java, and Node.js.</li>
+            <li class="about-point">Adept at database management and optimization (MySQL, MongoDB, PostgreSQL).</li>
+            <li class="about-point">Experience working with cloud platforms like AWS and Azure.</li>
+            <li class="about-point">Strong focus on building secure and high-performance systems.</li>
+            <li class="about-point">Enjoy problem-solving and learning new technologies to stay ahead of the curve.</li>
+            <li class="about-point">Collaborative team player who thrives in Agile and DevOps environments.</li>
+            <li class="about-point">Committed to writing clean, maintainable, and efficient code.</li>
+            <li class="about-point">Constantly improving my skills through projects, online courses, and reading.</li>
+         </ul>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2 class="projects-heading">My Projects</h2>
+    
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Project 1 - Backend API</h3>
+            </div>
+            <div class="project-body">
+                <p class="project-description">A RESTful API built using Node.js and Express to handle user authentication and CRUD operations.</p>
+            </div>
+            <div class="project-footer">
+                <a href="#" class="project-link">See Project</a>
             </div>
         </div>
-    </section>
-    
-   
-   <!-- Strength Section -->
-   <section class="strengths-section">
-    <h2 class="strengths-heading">My Strengths</h2>
-    <div class="strengths-container">
-        <div class="strength">
-            <h3>Creative</h3>
-            <div class="bar" data-width="90"></div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Project 2 - Database Management</h3>
+            </div>
+            <div class="project-body">
+                <p class="project-description">A project focused on optimizing MySQL databases with complex queries and indexing techniques.</p>
+            </div>
+            <div class="project-footer">
+                <a href="#" class="project-link">See Project</a>
+            </div>
         </div>
-        <div class="strength">
-            <h3>Cooperative</h3>
-            <div class="bar" data-width="85"></div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Project 3 - E-commerce Backend</h3>
+            </div>
+            <div class="project-body">
+                <p class="project-description">Backend services for an e-commerce site using Django, integrating payment gateway and order management.</p>
+            </div>
+            <div class="project-footer">
+                <a href="#" class="project-link">See Project</a>
+            </div>
         </div>
-        <div class="strength">
-            <h3>Problem Solver</h3>
-            <div class="bar" data-width="95"></div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Project 4 - API Integration</h3>
+            </div>
+            <div class="project-body">
+                <p class="project-description">Integration of external APIs into a backend system for real-time data updates and processing.</p>
+            </div>
+            <div class="project-footer">
+                <a href="#" class="project-link">See Project</a>
+            </div>
         </div>
-        <div class="strength">
-            <h3>Detail-Oriented</h3>
-            <div class="bar" data-width="80"></div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Project 5 - Microservices</h3>
+            </div>
+            <div class="project-body">
+                <p class="project-description">Developing a microservices architecture using Docker and Kubernetes for deployment and scalability.</p>
+            </div>
+            <div class="project-footer">
+                <a href="#" class="project-link">See Project</a>
+            </div>
         </div>
-        <div class="strength">
-            <h3>Team Player</h3>
-            <div class="bar" data-width="88"></div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Project 6 - Data Pipeline</h3>
+            </div>
+            <div class="project-body">
+                <p class="project-description">Building a data pipeline using Python for collecting, cleaning, and analyzing big data from various sources.</p>
+            </div>
+            <div class="project-footer">
+                <a href="#" class="project-link">See Project</a>
+            </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Project 7 - Real-time Chat App</h3>
+            </div>
+            <div class="project-body">
+                <p class="project-description">Developed a real-time chat application using Node.js, WebSocket, and MongoDB for message storage and real-time communication.</p>
+            </div>
+            <div class="project-footer">
+                <a href="#" class="project-link">See Project</a>
+            </div>
+        </div>
+
+        <!-- Project 8 -->
+        <div class="project-card">
+            <div class="project-header">
+                <h3 class="project-title">Project 8 - Task Manager</h3>
+            </div>
+            <div class="project-body">
+                <p class="project-description">A task management application built with Django and React to track tasks, deadlines, and project progress.</p>
+            </div>
+            <div class="project-footer">
+                <a href="#" class="project-link">See Project</a>
+            </div>
         </div>
     </div>
 </section>
 
 
+    <!-- Experience Section -->
+    <section class="experience-section">
+        <h2 class="experience-heading">My Journey</h2>
+
+        <div class="timeline">
+            <!-- Experience Item 1 -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <p class="year-range">2016 - 2018</p>
+                    <h3>Start of My Journey</h3>
+                    <p>Started learning backend development, diving into databases, server-side scripting, and exploring different technologies.</p>
+                    <p class="company-name">Self-learning Backend Development</p>
+                </div>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <p class="year-range">2019 - 2020</p>
+                    <h3>First Internship</h3>
+                    <p>Worked as a backend intern, contributing to real-world projects and learning team collaboration. Gained hands-on experience with APIs and databases.</p>
+                    <p class="company-name">TechX Solutions</p>
+                </div>
+            </div>
+
+            <!-- Experience Item 3 -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <p class="year-range">2021 - 2022</p>
+                    <h3>Backend Developer</h3>
+                    <p>Worked as a full-time backend developer, developing scalable RESTful APIs, implementing authentication, and managing databases.</p>
+                    <p class="company-name">DevCore Tech</p>
+                </div>
+            </div>
+
+            <!-- Experience Item 4 -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <p class="year-range">2023 - Present</p>
+                    <h3>Senior Backend Developer</h3>
+                    <p>Leading a team of developers, designing robust backend systems, and improving performance and security for large-scale applications.</p>
+                    <p class="company-name">Tech Innovations Ltd.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <script src="script.js"></script>
 
