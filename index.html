@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -12,7 +13,7 @@
 <body>
     <!-- Navbar Section (No changes here) -->
     <nav class="navbar">
-        <div class="logo">Your Name</div>
+        <div class="logo">Sahil Vishwakarma</div>
         <div class="hamburger" id="hamburger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -31,7 +32,7 @@
 
     <!-- Hero Section (No changes here) -->
     <section class="hero-section">
-        <h1 class="hero-heading">My Name Is John Doe</h1>
+        <h1 class="hero-heading">My Name Is Sahil Vishwakarma</h1>
         <p class="sub-heading">I am a Backend Developer</p>
         <a href="#know-more" class="cta-button">Know More About Me</a>
     </section>
@@ -230,7 +231,129 @@
 
         </div>
     </section>
+ <!-- gallery section -->
+ <section class="gallery-section">
+    <h2 class="gallery-title">My <span>Gallery</span></h2>
 
+    <!-- Infinite Scrolling Image Slider -->
+    <div class="image-slider">
+        <div class="slider-track"></div>
+    </div>
+
+    <!-- View More Button -->
+    <button id="viewMore" class="view-more">View More</button>
+
+    <!-- Full Gallery (Hidden Initially) -->
+    <div class="gallery-container hidden" id="gallery"></div>
+</section>
+
+<!-- Fullscreen Image Modal -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="fullImage">
+</div>
+
+<!-- ===============why me===================================== -->
+
+<section id="whyme" class="whyme-section">
+    <div class="content">
+        <h2 class="section-title">Why Hire Me? 🤔</h2>
+        <div class="reasons">
+            <div class="reason">
+                <h3>Expert in Backend Development 👨‍💻</h3>
+                <p>With years of experience in Java, I specialize in building powerful and scalable backend systems that work seamlessly behind the scenes.</p>
+            </div>
+            <div class="reason">
+                <h3>Scalable Solutions 📈</h3>
+                <p>My solutions are built with growth in mind—designed to scale as your business evolves and becomes more successful.</p>
+            </div>
+            <div class="reason">
+                <h3>Clean & Efficient Code 💡</h3>
+                <p>I ensure that every line of code I write is clean, efficient, and maintainable—easy to debug and extend as needed.</p>
+            </div>
+            <div class="reason">
+                <h3>Problem Solver 🧩</h3>
+                <p>I love tackling complex problems and turning challenges into elegant solutions that drive business value.</p>
+            </div>
+            <div class="reason">
+                <h3>Always Learning 📚</h3>
+                <p>I'm passionate about continuous learning and staying on top of the latest technologies to deliver cutting-edge solutions to clients.</p>
+            </div>
+            <div class="reason">
+                <h3>Fun with Java and Debugging 🕵️‍♂️</h3>
+                <p>Let's be honest—debugging can be tough. But I find joy in every bug I squash and every problem I solve. 🐞✨</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===========================================contact me ===================================== -->
+<section class="contact-me-section">
+    <div class="contact-content">
+        <h2 class="contact-section-title">Contact Me 📞</h2>
+        <p class="contact-section-description">
+            I’d love to hear from you! Whether you have a project in mind, need advice, or just want to chat, feel free to get in touch.
+        </p>
+        <form class="contact-form">
+            <div class="contact-form-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="contact-form-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="contact-form-group">
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="contact-submit-btn">Send Message</button>
+        </form>
+        <div class="social-media">
+            <a href="https://twitter.com" class="social-icon twitter" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://facebook.com" class="social-icon facebook" target="_blank" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-icon linkedin" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com" class="social-icon github" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        
+    </div>
+</section>
+
+
+<footer class="portfolio-footer">
+    <div class="footer-container">
+        <p class="created-by">Designed & Developed by <span>Sahil Vishwakarma</span></p>
+        
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+        
+        <div class="social-footer">
+            <a href="https://twitter.com" class="social-icon twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" class="social-icon facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://linkedin.com" class="social-icon linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com" class="social-icon github" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        <p class="copyright">© 2025 Sahil Vishwakarma. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+    <script src="gallery.js"></script>
     <script src="script.js"></script>
 
 </body>
