@@ -33,11 +33,11 @@ body {
 /* Logo Styling */
 .logo {
     font-size: 32px;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-family: 'Great Vibes', cursive; /* Premium handwritten style */
     color: #ffffff; /* White color for elegance */
     letter-spacing: 2px;
-    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.6); /* Soft golden glow */
+    /* text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.6);  */
 }
 
 /* Navbar Links Styling */
@@ -1675,3 +1675,154 @@ textarea {
 .about-me:hover {
     transform: scale(1.03);
 }
+.hire-me-btn {
+    background: linear-gradient(135deg, #0057b3, #009688); /* Deep Blue to Teal */
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 87, 179, 0.2); /* Softer shadow */
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hire-me-btn:hover {
+    background: linear-gradient(135deg, #004499, #008577); /* Slightly darker hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 87, 179, 0.3); /* Softer glow */
+}
+.download-cv-btn {
+    background: linear-gradient(135deg, #0057b3, #009688);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.download-cv-btn:hover {
+    background: linear-gradient(135deg, #004499, #008577);
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #ffd700, #ff8c00); /* Yellow-orange gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+  }
+  
+  /* Contact Grid */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  /* Contact Cards */
+  .contact-card {
+    background: rgba(20, 20, 20, 0.8); /* Semi-transparent dark layer */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 215, 0, 0.1); /* Subtle yellow border */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1); /* Yellow glow */
+    border-color: rgba(255, 215, 0, 0.3);
+  }
+  
+  .contact-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ffd700, transparent 50%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .contact-card:hover::before {
+    opacity: 0.3; /* Gradient border effect */
+  }
+  
+  .icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 215, 0, 0.1); /* Yellow tinted background */
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover .icon-wrapper {
+    transform: scale(1.1);
+  }
+  
+  .contact-card i {
+    font-size: 1.8rem;
+    color: #ffd700; /* Yellow icon */
+  }
+  
+  .contact-card h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #fff;
+  }
+  
+  .contact-card p {
+    color: #aaa;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    h2 {
+      font-size: 2.2rem;
+    }
+  }
